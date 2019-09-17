@@ -2,7 +2,7 @@
 
 ## Description
 
-This implementation tries to solve given system Ax = b and outputs its unique solution if it exists. Else, it provides the null space of the matrix. Feel free to open a pull request/issue in case the code doesn't work for a particular case.
+This implementation tries to solve given system Ax = b and outputs its unique solution if it exists. Else, it provides the null space of the matrix along with the complete solution. Feel free to open a pull request/issue in case the code doesn't work for a particular case.
 
 ## Instructions
 
