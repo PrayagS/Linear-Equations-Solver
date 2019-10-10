@@ -3,7 +3,6 @@
 
 void swapCols(double** matrix, int column1, int column2, int rows);
 void printMatrix(double** matrix, int rows, int cols);
-void removeNegZeroes(double **matrix, int rows, int cols);
 void reverseGaussian(double **matrix, int pivot_count, int rows, int cols);
 int compareDoubles(double x, double y);
 void extractF(double **matrix, int pivot_count, int **column_exchange_book, int size, int rows, int cols);
@@ -23,7 +22,7 @@ void traceColsExchange(double **matrix, int pivot_count, int rows, int cols){
                 if(!compareDoubles(matrix[i][k],0)){
                     swapCols(matrix, j, k, rows);
                     column_exchange_book[temp_index][0] = j;
-                    column_exchange_book[temp_index][1] = k; 
+                    column_exchange_book[temp_index][1] = k;
                     ++temp_index;
                     break;
                 }
