@@ -45,7 +45,7 @@ void extractF(double **matrix, int pivot_count, int **column_exchange_book, int 
     // Find complete solution of the system
     printf("Complete Solution:\n\n");
     completeSolution(matrix, pivot_count, rows, cols, matrixF, cols-1, column_exchange_book, size);
-    printf("\nThus, the complete solution of the system is x_p + k*x_n.");
+    printf("\nThus, the complete solution of the system is x_p + k*x_n, where k is the coefficient matrix of corresponding size.");
     free(matrixF);
     free(I);
 }

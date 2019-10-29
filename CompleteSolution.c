@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void printMatrix(double **matrix, int rows, int cols);
 int compareDoubles(double x, double y);
 
 void completeSolution(double **matrix, int pivot_count, int rows, int cols, double **matrixF, int rowsF, int **column_exchange_book, int size){
@@ -32,7 +33,5 @@ void completeSolution(double **matrix, int pivot_count, int rows, int cols, doub
 
     // Take one column from null space matrix for the null solution
     printf("\nNull Solution: \n");
-    for(i = 0 ; i < cols-1; ++i){
-        printf("x_n_%d = %.4lf\n",(i+1),matrixF[i][0]);
-    }
+    printMatrix(matrixF, cols-1, cols-pivot_count-1);    
 }
